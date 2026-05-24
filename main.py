@@ -282,7 +282,7 @@ def TrackImages():
         if (cv2.waitKey(1) == ord('q')):
             break
         
-# collecting the final attendance
+# Now this part of the code will collect final attendence
     ts = time.time()
     date = datetime.datetime.fromtimestamp(ts).strftime('%d-%m-%Y')
     exists = os.path.isfile("Attendance\Attendance_" + date + ".csv")
@@ -440,4 +440,6 @@ quitWindow.place(x=30, y=450)
 #End
 window.configure(menu=menubar)
 window.mainloop()
+
+# This porject is created by Arhat Shah
 
